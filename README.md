@@ -1,13 +1,32 @@
-#GESTOR APP 2025
-## Plataforma para la gestion  de sitios Comunes
-JUAN DIEGO SANCHEZ - WD
-Melissa Beltran
 
-ENTREGABLES
-1. Modifiquen el readme.md para incluir recomendaciones
-de instalacion uso y proposito de la app
-2. agregar el componente footer a los commons
-3. refactorizar el diseño del HOME (menu, banner, acerca)
-4. crear pagina nueva llamada booking (incluir en rutas)
-5. subir el desarrollo a github con una ramma independiente haciendo
-pull request
+# Luna Hotels
+
+Welcome to Luna Hotel, a web client for the purpose of managing reservations for our hotel chain. This MVP is oriented to a phased launch. In this phase, the home section is available, with images of our facilities.
+
+## 🌟 Features
+
+- * HTML
+- * CSS
+- **React 18**
+- **Vite**
+- **CSS**
+- **React Router** *(para navegación)*
+
+## 🔧 INSTALL
+
+Follow these steps to run the project in your local environment
+
+1-
+```bash
+2-
+git clone https://github.com/JDiegx/gestorapp2025.git
+
+3-
+cd gestorapp2025
+
+4-
+npm install
+
+5-
+npm run dev
+```

@@ -1,11 +1,13 @@
-export const DashBoard=()=>{
+import React from "react"
+import "./Dashboard.css"
 
-return(
+const Dashboard=()=>{
 
-    <>
-        <br /><br /><br /><br /><br />
-        <h1>Holas soy el dash</h1>
-    </>
-)
-
+    return(
+        <div className="dashboard">
+            <h1>Dashboard</h1>
+        </div>
+    )
 }
+
+export default Dashboard

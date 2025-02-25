@@ -1,16 +1,41 @@
+import React from 'react'
+import "./Home.css"
 
-import {Banner} from "../../common/Banner/Banner"
-import {Acerca} from "../../common/Acerca/Acerca"
-
-export function Home(){
-
-    return(
-
-        <>
-            <Banner></Banner>
-            <Acerca></Acerca>
-        
-        </>
-    )
-
+const Home = () => {
+  return (
+    <>
+      <div className='home'>
+          <div className='home__banner'>
+            <h1 className='home__tittle'>Luna Hotel</h1>
+            <p className='home__subtittle'>The best place to visit</p>
+            <form>
+              <label htmlFor="checking">Check-in:</label>
+              <input
+                  type="text"
+                  id="checkin"
+                  name="checkin"
+                  placeholder="Arrival"
+                  onFocus={(e) => (e.target.type = "date")}
+                  onBlur={(e) => (e.target.type = "text")}
+              />
+              <label htmlFor="checkout">Check-out:</label>
+              <input
+                  type="text"
+                  id="checkin"
+                  name="checkin"
+                  placeholder="Departure"
+                  onFocus={(e) => (e.target.type = "date")}
+                  onBlur={(e) => (e.target.type = "text")}
+              /> 
+              <button className='button' type="submit">Book Now</button>  
+            </form>  
+          </div>
+      </div>
+    </>
+  )
 }
+
+export default Home
+
+
+

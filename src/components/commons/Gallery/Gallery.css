@@ -1,0 +1,40 @@
+.Gallery{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.205), rgb(2, 0, 0));
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.Gallery__img{
+    padding: 200px;
+    gap: 40px;
+    margin-top: -180px;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    display: flex;
+    animation: slide 19s infinite;
+    
+}
+
+.Gallery__img  img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0%, 100% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+}
+
+
+img{
+
+    height: 580px;
+
+}

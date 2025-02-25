@@ -1,0 +1,10 @@
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-image: linear-gradient(rgba(7, 165, 214, 0.642), rgba(8, 8, 6, 0.692));
+}

@@ -1,7 +1,6 @@
 .home{
-    
     width: 100%;
-    height: 85Vh;
+    height: calc(100vh + 80px);
     background-image: url(../../../assets/Img/Luna4.jpg);
     background-position: center;
     background-size:cover;

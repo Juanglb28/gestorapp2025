@@ -9,7 +9,7 @@ const Home = () => {
             <h1 className='home__tittle'>Luna Hotel</h1>
             <p className='home__subtittle'>The best place to visit</p>
             <form>
-              <label htmlFor="checking">Check-in:</label>
+              <label>Check-in:</label>
               <input
                   type="text"
                   id="checkin"
@@ -18,10 +18,9 @@ const Home = () => {
                   onFocus={(e) => (e.target.type = "date")}
                   onBlur={(e) => (e.target.type = "text")}
               />
-              <label htmlFor="checkout">Check-out:</label>
+              <label>Check-out:</label>
               <input
                   type="text"
-                  id="checkin"
                   name="checkin"
                   placeholder="Departure"
                   onFocus={(e) => (e.target.type = "date")}

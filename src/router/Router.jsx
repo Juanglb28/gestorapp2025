@@ -7,7 +7,7 @@ import Header from '../components/commons/Header/Header'
 import Gallery from '../components/commons/Gallery/Gallery'
 import Footer from '../components/commons/Footer/Footer'
 import NotFound from '../components/pages/Not Found/NotFound'
-
+import { Form } from 'react-router-dom'
 
 const Router = () => {
   return (
@@ -18,7 +18,8 @@ const Router = () => {
       <Route path='/home' element={<Home/>}/>
       <Route path='/booking' element= {<Booking/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
-      <Route path='*'element={<NotFound/>}/>      
+      <Route path='*'element={<NotFound/>}/>
+      <Route path='/form' element={<form/>}/>      
     </Routes>
     <Gallery/>
     <Footer/>

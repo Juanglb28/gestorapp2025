@@ -1,0 +1,19 @@
+.calendar-table__days {
+  display: flex;
+  background-color: rgb(174, 221, 255);
+}
+
+.calendar-table-day,
+.calendar-table-hour {
+  width: 100px;
+  height: 30px;
+  padding: 0px 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-table__hours {
+  display: flex;
+}

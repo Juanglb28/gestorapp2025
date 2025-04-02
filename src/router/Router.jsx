@@ -2,12 +2,11 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../components/pages/Home/Home'
 import Booking from '../components/pages/Booking/Booking'
-import Dashboard from '../components/pages/Dashboard/Dashboard'
-import Header from '../components/commons/Header/Header'
-import Gallery from '../components/commons/Gallery/Gallery'
-import Footer from '../components/commons/Footer/Footer'
+import Dashboard from '../components/pages/DashBoard/Dashboard'
+import Header from '../components/common/Header/Header'
+import Gallery from '../components/common/Gallery/Gallery'
+import Footer from '../components/common/Footer/Footer'
 import NotFound from '../components/pages/Not Found/NotFound'
-import { Form } from 'react-router-dom'
 
 const Router = () => {
   return (
@@ -18,8 +17,7 @@ const Router = () => {
       <Route path='/home' element={<Home/>}/>
       <Route path='/booking' element= {<Booking/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
-      <Route path='*'element={<NotFound/>}/>
-      <Route path='/form' element={<form/>}/>      
+      <Route path='*'element={<NotFound/>}/>   
     </Routes>
     <Gallery/>
     <Footer/>

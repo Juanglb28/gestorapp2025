@@ -1,24 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import "./Calendar.css"
 import { calendar } from '../../../data/data'
-import { Form, useNavigate } from 'react-router-dom'
 
 
 const Calendar = () => {
     const [days, setDays] = useState([])
     const [hours, setHours] = useState([])
 
-    const navigator = useNavigate = useState([])
-
     useEffect(() => {
         setDays(calendar[0])
         setHours(calendar[1])
     }, [calendar])
-
-    function createBooking(dia, hora){
-       navigator("/form," {state:{day, hour}})
-    }
-    const reserve = (day, hour)=> {alert(`Se solicita reserva para el dia ${day} a las ${hour}`)} 
 
     return (
         <table className='calendar-table'>

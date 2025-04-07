@@ -7,18 +7,33 @@ const Booking = () => {
 
     useEffect(() => {
         setResidentialZones(zones);
-    }, []);
+    }, [zones]);
 
     return (
         <div className="booking">
-            {/* {residentialZones.map((zone) => (
-                <div key={zone.id} className="booking-zones__zones">
-                    <img className="booking__zone__imagen" src={zone.imagen} alt={zone.nombre} />
-                    <h2 className="booking__zone__nombre">{zone.nombre}</h2>
-                    <p className="booking__zone__descripcion">{zone.descripcion}</p>
-                    <p className="booking__zone__capacity">{zone.capacity}</p>
-                </div>
-            ))} */}
+            {
+                residentialZones.map((zone) => {
+                    return <div key={zone.id} className="booking__zone">
+                        <div className="booking__container-image">
+                            <img className="booking__image" src={zone.imagen} alt="" />
+                        </div>
+                        <div className="booking__information">
+                            <p className="booking__capacity">
+                                {`${zone.capacidad} personas`}
+                            </p >
+                            <h2 className="booking__tittle">
+                                {zone.nombre}
+                            </h2>
+                            <p className="booking__description">
+                                {zone.descripcion}
+                            </p>
+                            <button className="booking__button">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                })
+            }
         </div>
     );
 };

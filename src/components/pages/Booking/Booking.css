@@ -1,38 +1,75 @@
 .booking{
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin-top: 80px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 100px;
     background-image: linear-gradient(rgba(7, 165, 214, 0.642), rgba(2, 2, 2, 0.712));
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.booking__target{
-    width: 300px;
-    height: 300px;
+.booking__zone{
+    width: 450px;
+    height: 250px;
     background-color: white;
-    margin: 20px;
-    font-size: 20px;
-}
-
-.booking-zones__zones{
-    width: 100%;
-    height: 100vh;
-    margin-top: 80px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 100px; 
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.booking__zone__nombre{
-    font-size: 20px;
+.booking__container-image{
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
 }
 
-.booking__zone__descripcion{
-    font-size: 20px; 
+.booking__image{
+    width: 200px;
+    height: 250px;
+}
+
+.booking__information{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 0px 15px ;
+    box-sizing: border-box;
+}
+
+.booking__capacity{
+    color: gray; 
+    font-weight: 600;      
+}
+
+.booking__tittle{
+    font-weight: 600;
+    font-size: 25px;   
+    
+}
+
+.booking__description{
+    color: gray; 
+}
+
+.booking__button{
+    background: aqua;
+    color: rgba(0, 0, 0, 0.749);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background 0.3s ease;
+    border-radius: 30px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.393);
+    width: 143px;
+    height: 40px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
 }

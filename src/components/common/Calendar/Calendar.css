@@ -48,7 +48,7 @@
 }
 
 .calendar-table__button--reserved {
-  background-color: #007592 !important;
+  background-color: #d12008 !important;
   color: white !important;
   cursor: not-allowed;
   pointer-events: none;

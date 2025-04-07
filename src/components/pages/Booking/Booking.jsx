@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from "react";
 import "./Booking.css";
 import { zones } from "../../../data/data";
+import { useNavigate } from "react-router-dom";
 
 const Booking = () => {
     const [residentialZones, setResidentialZones] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         setResidentialZones(zones);
-    }, [zones]);
+    }, []);
+
+    const goToCalendar = (zone) => {
+        console.log (zone)
+        navigate(`/reservation-form`, {state:{zone}});
+    };
 
     return (
         <div className="booking">
@@ -20,14 +27,14 @@ const Booking = () => {
                         <div className="booking__information">
                             <p className="booking__capacity">
                                 {`${zone.capacidad} personas`}
-                            </p >
+                            </p>
                             <h2 className="booking__tittle">
                                 {zone.nombre}
                             </h2>
                             <p className="booking__description">
                                 {zone.descripcion}
                             </p>
-                            <button className="booking__button">
+                            <button className="booking__button" onClick={() => goToCalendar(zone)}>
                                 Book Now
                             </button>
                         </div>
@@ -39,5 +46,6 @@ const Booking = () => {
 };
 
 export default Booking;
+
 
 

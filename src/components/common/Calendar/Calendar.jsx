@@ -3,7 +3,7 @@ import "./Calendar.css"
 import { calendar } from '../../../data/data'
 
 
-const Calendar = () => {
+const Calendar = ({zoneObject}) => {
     const [days, setDays] = useState([])
     const [hours, setHours] = useState([])
 
@@ -11,6 +11,11 @@ const Calendar = () => {
         setDays(calendar[0])
         setHours(calendar[1])
     }, [calendar])
+
+    const reserve = (day, hour) => {
+        alert(`Se solicita reserva para el día ${day} a las ${hour} En la zona ${zoneObject.nombre}`);
+    }
+    
 
     return (
         <table className='calendar-table'>
@@ -28,7 +33,7 @@ const Calendar = () => {
                             {
                                 days.map((i) =>
                                     <td key={i} className='calendar-table-hour'>
-                                        <button onClick={()=> reserve(i, hour)}>Reservar</button>
+                                        <button onClick={()=> {reserve(i, hour)}}>Reservar</button>
                                     </td>
                                 )
                             }

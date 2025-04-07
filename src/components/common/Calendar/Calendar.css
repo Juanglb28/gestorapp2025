@@ -47,3 +47,14 @@
   background-color: #00cccc;
 }
 
+.calendar-table__button--reserved {
+  background-color: #007592 !important;
+  color: white !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  opacity: 0.8;
+}

@@ -11,5 +11,12 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.205), rgb(2, 0, 0));
 }
 
+.zone-name{
+    font-weight: 800;
+    font-size: larger;
+    padding: 20px;
+
+}
+
 
 

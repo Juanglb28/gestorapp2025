@@ -64,7 +64,7 @@ export const zones = [
     nombre: "Sala de Pilates",
     descripcion: "Espacio equipado para sesiones de pilates y estiramientos.",
     horarios: ["10:00 - 17:00"],
-    imagen: "../../src/assets/img/pilates.jpg",
+    imagen: "../../src/assets/img/Sala de Pilates.jpg",
     reservas: [],
     capacidad: 20
   },
@@ -82,7 +82,7 @@ export const zones = [
     nombre: "Cancha de Pádel",
     descripcion: "Moderna cancha de pádel con iluminación nocturna.",
     horarios: ["10:00 - 17:00"],
-    imagen: "../../src/assets/img/padel.jpg",
+    imagen: "../../src/assets/img/Cancha de Pádel.jpg",
     reservas: [],
     capacidad: 4
   },

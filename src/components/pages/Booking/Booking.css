@@ -5,7 +5,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-image: linear-gradient(rgba(7, 165, 214, 0.642), rgba(2, 2, 2, 0.712));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.205), rgb(2, 0, 0));
     gap: 20px;
     padding: 100px 150px;
     box-sizing: border-box;

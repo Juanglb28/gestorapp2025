@@ -1,0 +1,15 @@
+.reservation-calendar{
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.reservation-calendar__title{
+    font-size: 30px;
+    font-weight: 700;
+}

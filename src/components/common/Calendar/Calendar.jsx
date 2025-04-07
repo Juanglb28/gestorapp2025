@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import "./Calendar.css"
 import { calendar } from '../../../data/data'
-
+import { useNavigate } from 'react-router-dom'
 
 const Calendar = ({zoneObject}) => {
     const [days, setDays] = useState([])
     const [hours, setHours] = useState([])
+    const navigate = useNavigate()
 
     useEffect(() => {
         setDays(calendar[0])
         setHours(calendar[1])
     }, [calendar])
 
-    const reserve = (day, hour) => {
-        alert(`Se solicita reserva para el día ${day} a las ${hour} En la zona ${zoneObject.nombre}`);
+    const reserve = (day, hour, nameZone) => {
+        alert(`Se solicita reserva para el día ${day} a las ${hour} En la zona ${nameZone}`);
+        navigate(`/reservation-form`, {state: {day, hour, nameZone}})
     }
     
 
@@ -33,7 +35,7 @@ const Calendar = ({zoneObject}) => {
                             {
                                 days.map((i) =>
                                     <td key={i} className='calendar-table-hour'>
-                                        <button onClick={()=> {reserve(i, hour)}}>Reservar</button>
+                                        <button onClick={()=> {reserve(i, hour, zoneObject.nombre)}}>Reservar</button>
                                     </td>
                                 )
                             }

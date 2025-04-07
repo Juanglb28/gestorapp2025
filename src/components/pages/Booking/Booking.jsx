@@ -13,7 +13,7 @@ const Booking = () => {
 
     const goToCalendar = (zone) => {
         console.log (zone)
-        navigate(`/reservation-form`, {state:{zone}});
+        navigate(`/reservation-calendar`, {state:{zone}});
     };
 
     return (

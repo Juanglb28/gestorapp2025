@@ -8,6 +8,7 @@ import Gallery from '../components/common/Gallery/Gallery'
 import Footer from '../components/common/Footer/Footer'
 import NotFound from '../components/pages/Not Found/NotFound'
 import ReservationForm from '../components/common/ReservationForm/ReservationForm'
+import ReservationCalendar from '../components/common/ReservationCalendar/ReservationCalendar'
 
 const Router = () => {
   return (
@@ -19,6 +20,7 @@ const Router = () => {
       <Route path='/booking' element= {<Booking/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/reservation-form' element={<ReservationForm/>}/>
+      <Route path='/reservation-calendar' element={<ReservationCalendar/>}/>
       <Route path='*'element={<NotFound/>}/>   
     </Routes>
     <Gallery/>
